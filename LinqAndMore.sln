@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAndMore", "LinqAndMore\LinqAndMore.csproj", "{7FA1B223-15BB-4A59-8AEC-0B08953795C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqAndMore", "LinqAndMore\LinqAndMore.csproj", "{7FA1B223-15BB-4A59-8AEC-0B08953795C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearninLINQ", "LearninLINQ\LearninLINQ.csproj", "{F9A41961-11FE-4FA6-874E-37DDB153053C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearninLINQ", "LearninLINQ\LearninLINQ.csproj", "{F9A41961-11FE-4FA6-874E-37DDB153053C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars", "CodeWars\CodeWars.csproj", "{96FD8370-B244-44A8-9EA6-54620D03374B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeWars", "CodeWars\CodeWars.csproj", "{96FD8370-B244-44A8-9EA6-54620D03374B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqForDum", "LinqForDum\LinqForDum.csproj", "{6F89E401-9459-4479-BD1F-CC7C55074009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqForDum", "LinqForDum\LinqForDum.csproj", "{6F89E401-9459-4479-BD1F-CC7C55074009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqInAction", "LinqInAction\LinqInAction.csproj", "{EE1CFC09-0D8D-4A53-B9BB-A9C10C3F8338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqInAction", "LinqInAction\LinqInAction.csproj", "{EE1CFC09-0D8D-4A53-B9BB-A9C10C3F8338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCodeWars", "TestCodeWars\TestCodeWars.csproj", "{CED65562-76AC-4291-A1C2-90954415DBAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EE1CFC09-0D8D-4A53-B9BB-A9C10C3F8338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE1CFC09-0D8D-4A53-B9BB-A9C10C3F8338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE1CFC09-0D8D-4A53-B9BB-A9C10C3F8338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED65562-76AC-4291-A1C2-90954415DBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED65562-76AC-4291-A1C2-90954415DBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED65562-76AC-4291-A1C2-90954415DBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED65562-76AC-4291-A1C2-90954415DBAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

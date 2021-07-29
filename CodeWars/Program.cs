@@ -18,55 +18,59 @@ namespace CodeWars
             //			w3Exe.Exe29();
             //			csExe.HManyDays(new DateTime(1946,1,1),DateTime.Now);
 
-            //			Console.WriteLine(woCls.SumLowst(new int[]{ 19, 5, 42, 2, 77 }));
-            //			Console.WriteLine(woCls.SumLowst(new int[]{ 10, 343445353, 3453445, 345353453 }));
-            //			int[] arr = woCls.MinMax(new int[]{ 1, 2, 3, 4, 5 });
-            //			foreach (var element in arr)
-            //				Console.WriteLine(element);
-            //			arr = woCls.MinMax(new int[]{ 2334454, 5 });
-            //			foreach (var element in arr)
-            //				Console.WriteLine(element);
-            //			arr = woCls.MinMax(new int[]{ 1 });
-            //			foreach (var element in arr)
-            //				Console.WriteLine(element);
-            //			woCls.SqrDigit(9119);
+
+
+
             //			woCls.SortOdd(new int[]{ 7, 1 });
             //			woCls.SortOdd(new int[]{ 5, 8, 6, 3, 4 });
             //			woCls.SortOdd(new int[]{ 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 });
+
             //			woCls.FindOddInt(new int[]{ 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 });//5
             //			woCls.FindOddInt(new int[]{ 1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5 });//-4
             //			woCls.FindOddInt(new int[]{ 20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5 });//5
             //			woCls.FindOddInt(new int[]{ 1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1 });//10
             //			woCls.FindOddInt(new int[]{ 5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10 });//1
+
             //			woCls.Tickets(new int[]{ 25, 25, 50, 100 }); //yes
             //			woCls.Tickets(new int[]{ 25, 25, 25, 25, 50, 100, 50 }); //yes
             //			woCls.Tickets(new int[]{ 25, 25, 50 });//yes
             //			woCls.Tickets(new int[]{ 25, 25, 50, 50, 100 });//no
+
             //			Console.WriteLine(woCls.SquareArr(new int[]{ 1, 2, 2 }));//9
             //			woCls.SquareArr(new int[]{ 1, 2 });//5
             //			woCls.SquareArr(new int[]{ 5, 3, 4 });//50
+
             //			woCls.SumNums(-1, 2);
             //			woCls.SumNums(-1, 0);
             //			woCls.SumNums(1, 1);
+
             //			woCls.VowelRemove("This website is for losers LOL!");
+
             //			woCls.RemoveLastChar("Find odd");
+
             //			woCls.SmallestIntArray(new int[]{34, 15, 88, 2});
             //			woCls.SmallestIntArray(new int[]{34, -345, -1, 100});
+
             //			woCls.OnesAndZeros(new int[]{0,0,0,1});//1
             //			woCls.OnesAndZeros(new int[]{1,0,0,1});//2
+
             //			woCls.NoSpaceString("s i m p l e");
+
             //			woCls.RGBtoHex(255,255,255);
             //			woCls.RGBtoHex(255,255,300);
             //			woCls.RGBtoHex(0,0,0);
             //			woCls.RGBtoHex(148,0,211);
             //			woCls.RGBtoHex(148,-20,211);
             //			woCls.RGBtoHex(212,53,12);
+
             //			woCls.CamelCase("the-stealth-warrior");
             //			woCls.CamelCase("The_Stealth_Warrior");
+
             //			woCls.IQTest("2 4 7 8 10");
             //			woCls.IQTest("1 2 2");
             //			woCls.IQTest("5 3 2");
             //			woCls.IQTest("100 100 1");
+
             //			woCls.EvenOdd(10);
             //			woCls.EvenOdd(11);
 

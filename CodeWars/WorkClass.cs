@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace CodeWars
 {
-    class WorkClass
+    public class WorkClass
     {
-        public int SumLowst(int[] intA)
+        public static int SumLowst(int[] intA)
         {
             return intA.OrderBy(x => x).Take(2).Sum();
         }
 
-        public int[] MinMax(int[] arr)
+        public static int[] MinMax(int[] arr)
         {
             //			if (arr.Length == 1) {
             //				int[] arT = new int[2];
@@ -46,7 +46,7 @@ namespace CodeWars
             return Double.NaN;
         }
 
-        public int SqrDigit(int num)
+        public static int SqrDigit(int num)
         {
             var query = num.ToString().Select(x => Convert.ToInt32(x) - 48).ToArray().Select(x => x * x);
 
