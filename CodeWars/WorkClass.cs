@@ -61,7 +61,7 @@ namespace CodeWars
 
         }
 
-        public int[] SortOdd(int[] arr)
+        public static int[] SortOdd(int[] arr)
         {
             List<int> odds = new List<int>();
 
@@ -96,7 +96,7 @@ namespace CodeWars
             //          return array.Select(e => e%2 == 1 ? odds.Dequeue() : e).ToArray();
         }
 
-        public int FindOddInt(int[] arr)
+        public static int FindOddInt(int[] arr)
         {
 
             //			var dicti = new Dictionary<int,int>();
@@ -123,9 +123,8 @@ namespace CodeWars
             return arr.GroupBy(x => x).Single(g => g.Count() % 2 == 1).Key;
         }
 
-        public string Tickets(int[] dolla)
+        public static string Tickets(int[] dolla)
         {
-
             int twfive = 0;
             int fift = 0;
             int hundr = 0;
@@ -169,7 +168,7 @@ namespace CodeWars
 
         }
 
-        public int SquareArr(int[] arr)
+        public static int SquareArr(int[] arr)
         {
             var query = arr.Select(x => x * x).Sum();
 
@@ -180,6 +179,9 @@ namespace CodeWars
 
         public int SumNums(int a, int b)
         {
+            //			woCls.SumNums(-1, 2);
+            //			woCls.SumNums(-1, 0);
+            //			woCls.SumNums(1, 1);
 
             int min = Math.Min(a, b);
             int max = Math.Max(a, b);
@@ -200,7 +202,7 @@ namespace CodeWars
         }
 
         public string VowelRemove(string str)
-        {
+        {//			woCls.VowelRemove("This website is for losers LOL!");
 
             //			var query = str.ToCharArray().Where(x => x != 'a').Where(x => x != 'e').Where(x => x != 'i').Where(x => x != 'o').Where(x => x != 'u');
             var query = str.Where(x => !"aeiou".Contains(x)).Where(x => !"aeiou".ToUpper().Contains(x)).Select(x => x);
@@ -217,18 +219,22 @@ namespace CodeWars
         }
 
         public string RemoveLastChar(string str)
-        {
+        {//			woCls.RemoveLastChar("Find odd");
             str = str.Remove(str.Length - 1, 1).Remove(0, 1);
             return str;
         }
 
         public int SmallestIntArray(int[] args)
         {
+            //			woCls.SmallestIntArray(new int[]{34, 15, 88, 2});
+            //			woCls.SmallestIntArray(new int[]{34, -345, -1, 100});
             return args.Min();
         }
 
         public int OnesAndZeros(int[] binArr)//binaryint array to decimal
         {
+            //			woCls.OnesAndZeros(new int[]{0,0,0,1});//1
+            //			woCls.OnesAndZeros(new int[]{1,0,0,1});//2
             string str = "";
             foreach (var element in binArr)
             {
@@ -243,12 +249,19 @@ namespace CodeWars
 
         public string NoSpaceString(string str)
         {
+            //			woCls.NoSpaceString("s i m p l e");
             Console.WriteLine(str.Replace(" ", ""));
             return str.Replace(" ", "");
         }
 
         public string RGBtoHex(int r, int g, int b)
         {
+            //			woCls.RGBtoHex(255,255,255);
+            //			woCls.RGBtoHex(255,255,300);
+            //			woCls.RGBtoHex(0,0,0);
+            //			woCls.RGBtoHex(148,0,211);
+            //			woCls.RGBtoHex(148,-20,211);
+            //			woCls.RGBtoHex(212,53,12);
             if (r > 255)
             {
                 r = 255;
@@ -282,6 +295,8 @@ namespace CodeWars
 
         public string CamelCase(string str)
         {
+            //			woCls.CamelCase("the-stealth-warrior");
+            //			woCls.CamelCase("The_Stealth_Warrior");
             if (str.Contains("-"))
             {
                 char[] chArr = str.ToCharArray();
@@ -318,6 +333,11 @@ namespace CodeWars
 
         public int IQTest(string numsStr)
         {
+            //			woCls.IQTest("2 4 7 8 10");
+            //			woCls.IQTest("1 2 2");
+            //			woCls.IQTest("2 4 7 8 10");
+            //			woCls.IQTest("5 3 2");
+            //			woCls.IQTest("100 100 1");
             int[] nums = numsStr.Split(' ').Select(n => Convert.ToInt32(n)).ToArray();
 
             int cOdd = 0;
@@ -367,17 +387,7 @@ namespace CodeWars
             Console.WriteLine(num % 2 == 0 ? "Even" : "Odd");
         }
 
-        public void Tester(string str)
-        {
-            var ints = str.Split(' ').Select(int.Parse).ToList();
-
-            var uniq = ints.GroupBy(x => x % 2).OrderBy(n => n.Count()).First().First();
-
-            Console.WriteLine(ints.FindIndex(x => x == uniq) + 1);
-        }
-
-
-        public List<string> Anagrams(string word, List<string> words)
+        public static List<string> Anagrams(string word, List<string> words)
         {
             List<string> retList = new List<string>();
             char[] wordChar = word.ToCharArray();//get chars on original string
@@ -408,7 +418,7 @@ namespace CodeWars
         //         .ToList();
 
 
-        public String Maskify(string str)
+        public static String Maskify(string str)
         {
             string retStr = "";
             if (str.Length > 4)
@@ -428,7 +438,7 @@ namespace CodeWars
         }
 
 
-        public int DigitalRoot(long num)
+        public static int DigitalRoot(long num)
         {
             long sum = 0;
             while (num > 0)
@@ -470,7 +480,11 @@ namespace CodeWars
 
         public int FindUniqueNum(IEnumerable<int> numbers)
         {
-
+            //			woCls.FindUniqueNum(new []{ 1, 1, 1, 2, 1, 1 });//2
+            //			woCls.FindUniqueNum(new []{ 0, 0, 5, 0, 0 });//0.55
+            //			woCls.FindUniqueNum(new []{ 1, 2, 2, 2 });//1
+            //			woCls.FindUniqueNum(new []{ -2, 2, 2, 2 });//-2
+            //			woCls.FindUniqueNum(new []{ 11, 11, 14, 11, 11 });//14
             var query = numbers.GroupBy(x => x).Where(x => x.Count() == 1).Select(x => x.Key);
 
             foreach (var element in query)
@@ -487,7 +501,10 @@ namespace CodeWars
 
         public string OrderString(string words)
         {
+            //TODO: remove numbers for fun
 
+            //woCls.OrderString("is2 Thi1s T4est 3a");
+            //woCls.OrderString("4of Fo1r pe6ople g3ood th5e the2");
             List<string> list = words.Split(' ').ToList();
             words = "";
 
@@ -510,11 +527,15 @@ namespace CodeWars
 
         public String SumOddEvn(int[] arr)
         {
+            // Console.WriteLine(woCls.SumOddEvn(new int[]{0,1,4}));
+            // Console.WriteLine(woCls.SumOddEvn(new int[]{0,-1,-5}));
             return (arr.Sum() % 2) == 0 ? "even" : "odd";
         }
 
         public string[] SplitStrings(string str)
         {
+            // woCls.SplitStrings("abc");
+            // woCls.SplitStrings("abcdef");
             if ((str.Length % 2) == 1)
             {
                 str += "_";
@@ -545,11 +566,16 @@ namespace CodeWars
 
         public int VowelCount(string str)
         {
+            // Console.WriteLine(woCls.VowelCount("The input string will only"));
             return str.Where(x => "aeiou".Contains(x)).Select(x => x).Count();
         }
 
         public int ParOutlier(int[] inArr)
         {
+            //returns the only odd or even on the array
+
+            //Console.WriteLine(woCls.ParOutlier(new int[] { 2, 4, 0, 100, 4, 11, 2602, 36 }));
+            //Console.WriteLine(woCls.ParOutlier(new int[] { 160, 3, 1719, 19, 11, 13, -21 }));
             return inArr.GroupBy(x => (x % 2 == 0)).Single(x => x.Count() == 1).FirstOrDefault();
         }
 
@@ -563,6 +589,7 @@ namespace CodeWars
 
         public string CreatePhone(int[] nArr)
         {
+            // Console.WriteLine(woCls.CreatePhone(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }));
             string number = "(";
             for (int i = 0; i < 3; i++)
             {
@@ -585,7 +612,10 @@ namespace CodeWars
         }
 
         public string MinMax(string numbers)
-        {
+        {            
+            //            Console.WriteLine(woCls.MinMax("1 2 3 4 5"));
+            //            Console.WriteLine(woCls.MinMax("1 2 -3 4 5"));
+            //            Console.WriteLine(woCls.MinMax("1 2 3 4 -5"));
             string[] sArr = numbers.Split(' ');
             int[] nArr = new int[sArr.Length];
 
@@ -629,9 +659,14 @@ namespace CodeWars
             return String.Concat(String.Concat(str1, str2).OrderBy(c => c).Distinct());
         }
 
-        public void Prueba()
+        public void Tester(string str)
         {
+            var ints = str.Split(' ').Select(int.Parse).ToList();
 
+            var uniq = ints.GroupBy(x => x % 2).OrderBy(n => n.Count()).First().First();
+
+            Console.WriteLine(ints.FindIndex(x => x == uniq) + 1);
         }
+
     }
 }
