@@ -612,7 +612,7 @@ namespace CodeWars
         }
 
         public string MinMax(string numbers)
-        {            
+        {
             //            Console.WriteLine(woCls.MinMax("1 2 3 4 5"));
             //            Console.WriteLine(woCls.MinMax("1 2 -3 4 5"));
             //            Console.WriteLine(woCls.MinMax("1 2 3 4 -5"));
@@ -666,6 +666,31 @@ namespace CodeWars
             var uniq = ints.GroupBy(x => x % 2).OrderBy(n => n.Count()).First().First();
 
             Console.WriteLine(ints.FindIndex(x => x == uniq) + 1);
+        }
+
+        public static int[] Divisors(int n)
+        {
+            List<int> divs = new();
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    divs.Add(i);
+                }
+            }
+
+            int[] arr = divs.Count != 0 ? divs.ToArray() : null;
+
+            return arr;
+
+            //var div = Enumerable.Range(2, (int)Math.Sqrt(n))
+            //            .Where(x => n % x == 0 && x < n)
+            //            .SelectMany(x => new[] { x, n / x })
+            //            .OrderBy(x => x)
+            //            .Distinct()
+            //            .ToArray();
+
+            //return div.Any() ? div : null;
         }
 
     }

@@ -128,5 +128,17 @@ namespace TestCodeWars
             return arr;
 
         }
+
+        private void DivisorTest()
+        {//https://www.codewars.com/kata/544aed4c4a30184e960010f4/solutions/csharp
+            Random rnd = new Random();
+            for (int i = 0; i < 100; ++i)
+            {
+                int test = rnd.Next(2, 101);
+                int[] expected = WorkClass.Divisors(test);
+                int[] actual = WorkClass.Divisors(test);
+                Assert.AreEqual(expected, actual);
+            }
+        }
     }
 }
