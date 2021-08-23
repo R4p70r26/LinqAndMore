@@ -116,6 +116,14 @@ namespace TestCodeWars
             Assert.AreEqual(2, WorkClass.DigitalRoot(493193));
         }
 
+        [TestMethod]
+        public void OpenOrSeniorTest()
+        {
+            CollectionAssert.AreEqual(new List<string> { "Open", "Senior", "Open", "Senior" }, (System.Collections.ICollection)WorkClass.OpenOrSenior(new[] { new[] { 45, 12 }, new[] { 55, 21 }, new[] { 19, 2 }, new[] { 104, 20 } }));
+            CollectionAssert.AreEqual(new List<string> { "Open", "Open", "Open", "Open" }, (System.Collections.ICollection)WorkClass.OpenOrSenior(new[] { new[] { 3, 12 }, new[] { 55, 1 }, new[] { 91, -2 }, new[] { 54, 23 } }));
+            CollectionAssert.AreEqual(new List<string> { "Senior", "Open", "Open", "Open" }, (System.Collections.ICollection)WorkClass.OpenOrSenior(new[] { new[] { 59, 12 }, new[] { 45, 21 }, new[] { -12, -2 }, new[] { 12, 12 } }));
+        }
+
         private int[] RndmIntArray()
         {
             Random random = new Random();

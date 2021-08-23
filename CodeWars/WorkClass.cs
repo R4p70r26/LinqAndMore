@@ -693,5 +693,40 @@ namespace CodeWars
             //return div.Any() ? div : null;
         }
 
+        public IEnumerable<string> Permutate(string str)//permutates but only dif chars
+        {
+            if (str.Length <= 1)
+            {
+                return new List<string> { str };
+            }
+
+            var permutations = from c in str
+                               from p in Permutate(new String(str.Where(x => x != c).ToArray()))
+                               select c + p;
+            return permutations;
+
+        }
+
+        public static IEnumerable<string> OpenOrSenior(int[][] arr)
+        {
+            string[] value = new string[arr.Length];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i][0] >= 55 && arr[i][1] > 7)
+                {
+                    value[i] = "Senior";
+                } else
+                {
+                    value[i] = "Open";
+                }
+            }
+
+
+            return value.ToList();
+
+            //return data.Select(member => member[0] >= 55 && member[1] > 7 ? "Senior" : "Open").ToList();
+        }
+
     }
 }
