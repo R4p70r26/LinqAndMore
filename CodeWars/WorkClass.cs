@@ -707,6 +707,17 @@ namespace CodeWars
 
         }
 
+        public static IEnumerable<string> GetPermutations(string s)//permute 
+        {
+            if (s.Length > 1)
+                return from ch in s
+                       from permutation in GetPermutations(s.Remove(s.IndexOf(ch), 1))
+                       select string.Format("{0}{1}", ch, permutation);
+
+            else
+                return new string[] { s };
+        }
+
         public static IEnumerable<string> OpenOrSenior(int[][] arr)
         {
             string[] value = new string[arr.Length];
